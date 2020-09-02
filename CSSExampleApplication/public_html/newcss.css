@@ -1,0 +1,138 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-Sep-2020, 2:40:51 PM
+    Author     : ramnagar
+*/
+
+/* CSS Syntax */
+/*
+selector {
+    property1: value;
+    property2: value;
+}
+e.g.,
+//using element tag
+h1{
+    color: blue;
+}
+
+//using class name
+.class-name{
+    property: value;
+}
+
+//using id as selector
+#id{
+   property: value; 
+}
+
+//CSS Selector Combination (without any space)
+.selector1.selector2{
+   property: value;
+}
+
+//CSS combo - ancestor child
+.ancestor .child{
+    propery: value;
+}
+
+//https://www.w3schools.com/cssref/css_units.asp
+CSS has several different units for expressing a length.
+Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.
+Length is a number followed by a length unit, such as 10px, 2em, etc.
+A whitespace cannot appear between the number and the unit. However, if the value is 0, the unit can be omitted.
+For some CSS properties, negative lengths are allowed.
+
+Absolute Length
+Unit	Description
+cm	centimeters
+mm	millimeters
+in	inches (1in = 96px = 2.54cm)
+px *	pixels (1px = 1/96th of 1in)
+pt	points (1pt = 1/72 of 1in)
+pc	picas (1pc = 12 pt)
+
+Relative Length
+Unit	Description	
+em	Relative to the font-size of the element (2em means 2 times the size of the current font)	
+ex	Relative to the x-height of the current font (rarely used)	
+ch	Relative to the width of the "0" (zero)	
+rem	Relative to font-size of the root element	
+vw	Relative to 1% of the width of the viewport*	
+vh	Relative to 1% of the height of the viewport*	
+vmin	Relative to 1% of viewport's* smaller dimension	
+vmax	Relative to 1% of viewport's* larger dimension	
+%	Relative to the parent element
+
+*/
+
+a{
+    color: red;
+}
+
+h1{
+    color: blue;
+}
+
+.big-header{
+    color: blue;
+}
+
+button{
+    padding: 10px;
+    color: white;
+}
+
+.btn-1{
+    background-color: green;
+}
+
+.btn-2{
+    background-color: blue;
+}
+
+.btn-3{
+    background-color: red;
+}
+
+h1.big-header{
+   font-size: 200%;
+}
+
+#main-header.large.blue{
+    font-size: 200%;
+}
+
+div p{
+    color: red;
+}
+
+div.section1 span.section1{
+    color: brown;
+}
+
+/*.big{
+    font-size: 200%;
+}
+
+.large{
+    font-size: 200%;
+}*/
+
+.big, .large{
+    font-size: 200%;
+}
+
+div {
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+span {
+  font-size: 0.5em;
+}
+
