@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sample HTML Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style type="text/css">
+            table{
+                border: 2px solid red;
+                /*border-collapse: collapse;*/
+            }
+        </style>        
+        <style>
+            td {
+                border: solid 2px lightgrey;
+            }
+            </style>
+            
+        <!--link rel="stylesheet" type="text/css" href=""-->
+    </head>
+    <body>
+        
+        <!-- Header element for the document-->
+        <header>
+            This is the header.
+        </header>
+        
+        <!-- Heading Elements -->
+        <h1>H1 Heading Text</h1>
+        <h2>H1 Heading Text</h2>
+        <h3>H1 Heading Text</h3>
+        <h4>H1 Heading Text</h4>
+        <h5>H1 Heading Text</h5>
+        <h6>H1 Heading Text</h6>
+        
+        <!-- Break Tag Elements -->
+        <!-- Self closing Tag -->
+        <br/>
+     
+        <!-- BIG tag element-->
+        <big> This text is big</big>
+        <br>
+        <!-- Small tag element-->
+        <small> This text is small</small>
+        <br>
+        
+        <!-- DIV tag or Division or Section Elements -->
+        <div>
+            
+            <!-- P tag or paragraph Elements -->
+            <p> <u><b><i>tag &nbsp; &lt; &gt; defines a paragraph of text.</i></b></u> 
+            It is a block-level element and always starts on a new line. 
+            Before and after each paragraph, browsers add margin automatically. 
+            You can modify the margins using the CSS margin property .
+            
+            <!-- Span Tag Elements 
+            It can be used to group elements for styling purposes 
+            (using the class or id attributes)-->
+            <span style="color:red">Inline container used to mark up a part of text</span>
+            
+            </p>
+            
+        </div>
+        
+        <!-- Image Tag Elements -->
+        <img src="sample.jpg" height="50" width="30" alt="There supposed to be image here.">
+        
+        <!-- Horizontal Rule Elements -->
+        <hr width="70%"/>
+        
+        
+        <!-- Link tag or anchor tag element -->
+        <a href="www.google.com"> Google Website </a>
+        
+        <!-- Ordered List element-->
+        <ol type="1">
+            <li> List Element1</li>
+            <li> List Element2</li>
+            <li> List Element3</li>
+        </ol>    
+        <ol type="A">
+            <li> List Element1</li>
+            <li> List Element2</li>
+            <li> List Element3</li>
+        </ol>    
+        <ol type="a">
+            <li> List Element1</li>
+            <li> List Element2</li>
+            <li> List Element3</li>
+        </ol>    
+        <ol type="I">
+            <li> List Element1</li>
+            <li> List Element2</li>
+            <li> List Element3</li>
+        </ol>    
+        <ol type="i">
+            <li> List Element1</li>
+            <li> List Element2</li>
+            <li> List Element3</li>
+        </ol>    
+        <!-- Unordered List element-->
+        <ul type="disc">
+            <li> List Element1</li>
+            <li> List Element2</li>
+            <li> List Element3</li>
+        </ul>    
+        <ul type="square">
+            <li> List Element1</li>
+            <li> List Element2</li>
+            <li> List Element3</li>
+        </ul>    
+        <ul type="circle">
+            <li> List Element1</li>
+            <li> List Element2</li>
+            <li> List Element3</li>
+        </ul>    
+        <!-- Form Element -->
+        <!-- action="script.php" when we submit the form -->
+        <!-- method="" -->
+        <h1>Registration Form</h1>
+        <div id="RegistrationForm">
+        <form>
+                <section>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" placeholder="Enter your first name" required>
+                
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" placeholder="Enter your last name" required>
+                </section>
+            
+                <div>
+                    
+                    <input type="radio" name="gender-choice" value="choice-1">
+                    <label>Male</label>
+                    
+                    <input type="radio" name="gender-choice" value="choice-2">
+                    <label >Female</label>
+                    
+                </div>
+                
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="xyz@gmail.com">
+                    
+                    <label for="password">Password</label>
+                    <input type="password" name="password">
+                </div>
+                <br/>
+                <!-- Select One Choice Element -->
+                <div>
+                    <label for="Month">Birthday</label>
+                    <select name="Month">
+                        <option value="0" selected disabled>Month</option>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+                </div>  
+                <br/>
+                <input name="agree" type="checkbox">
+                <label for="agree">I agree to all the condition of the form:</label>
+                <br/>
+                <button type="submit">Save</button>
+                <button type="reset">Cancel</button>
+                <button type="button">Save and Close</button>
+        </form>
+        
+        </div>
+        
+        <!-- Table Element -->
+        <table>
+                <thead> <th>Name</th> <th>Email</th> </thead>
+                <tbody>
+                <tr>
+                    <td>ABC</td> <td>abc@gmail.com</td>
+                </tr>
+                <tr> 
+                    <td>XYZ</td>
+                </tr>
+                </tbody>
+            </table>
+        
+        <!-- Footer element for the document-->
+        <footer>
+            This is footer.
+        </footer>
+        
+    </body>
+</html>
