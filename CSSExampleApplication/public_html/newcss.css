@@ -9,42 +9,73 @@ and open the template in the editor.
 */
 
 /* CSS Syntax */
-/*
-selector {
+
+/*selector {
     property1: value;
     property2: value;
 }
-e.g.,
-//using element tag
+*/
+
+a{
+    color: red;
+}
+
 h1{
     color: blue;
 }
 
-//using class name
+/*//using class name
 .class-name{
     property: value;
 }
+*/
 
-//using id as selector
-#id{
+.big-header{
+    color: blue;
+}
+
+.big-header{
+    color: blue;
+}
+
+.big-header{
+    color: blue;
+}
+
+.btn-1{
+    background-color: green;
+}
+
+.btn-2{
+    background-color: blue;
+}
+
+.btn-3{
+    background-color: red;
+}
+
+/*//using element tag as selector
+element {
    property: value; 
 }
+*/
 
-//CSS Selector Combination (without any space)
-.selector1.selector2{
-   property: value;
+button{
+    padding: 10px;
+    color: white;
 }
 
-//CSS combo - ancestor child
-.ancestor .child{
-    propery: value;
+div {
+  font-size: 30px;
+  border: 1px solid black;
 }
 
+/*
 //https://www.w3schools.com/cssref/css_units.asp
-CSS has several different units for expressing a length.
+CCSS has several different units for expressing a length.
 Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.
 Length is a number followed by a length unit, such as 10px, 2em, etc.
-A whitespace cannot appear between the number and the unit. However, if the value is 0, the unit can be omitted.
+Awhitespace cannot appear between the number and the unit. However, if the value is 0, the unit can be omitted.
 For some CSS properties, negative lengths are allowed.
 
 Absolute Length
@@ -70,35 +101,25 @@ vmax	Relative to 1% of viewport's* larger dimension
 
 */
 
-a{
-    color: red;
+span {
+  font-size: 0.5em;
 }
 
-h1{
-    color: blue;
+/*//using id as selector
+#id{
+   property: value; 
+}
+*/
+
+#main-header{
+    font-size: 200%;
 }
 
-.big-header{
-    color: blue;
+/*//CSS Selector Combination (without any space)
+.selector1.selector2{
+   property: value;
 }
-
-button{
-    padding: 10px;
-    color: white;
-}
-
-.btn-1{
-    background-color: green;
-}
-
-.btn-2{
-    background-color: blue;
-}
-
-.btn-3{
-    background-color: red;
-}
-
+*/
 h1.big-header{
    font-size: 200%;
 }
@@ -107,6 +128,11 @@ h1.big-header{
     font-size: 200%;
 }
 
+/*//CSS combo - ancestor child
+.ancestor .child{
+    propery: value;
+}
+*/
 div p{
     color: red;
 }
@@ -114,6 +140,11 @@ div p{
 div.section1 span.section1{
     color: brown;
 }
+
+/*//properties that are common for two different element and to avoid duplicate
+.selector1, .selector2{
+    property: value;
+}*/
 
 /*.big{
     font-size: 200%;
@@ -127,12 +158,51 @@ div.section1 span.section1{
     font-size: 200%;
 }
 
-div {
-  font-size: 30px;
-  border: 1px solid black;
+/*//common things
+ use of wild card 
+*/
+* {
+    font-family: Arial;
 }
 
-span {
-  font-size: 0.5em;
+/*psuedo classes*/
+/*unvisited*/
+a:link{
+    text-decoration: none;
+    color: blue;
+}
+
+/*focus, user focused using keyboard,
+hover, user focused using mouse*/
+a:focus,
+a:hover{
+    color: magenta;
+    text-decoration: underline;
+}
+
+/*currently clicking*/
+a:active{
+    color: red;
+}
+
+a:visited{
+    color: black;
+}
+
+/*https://css-tricks.com/almanac/properties/l/list-style/*/
+ul.train li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+ul.traininner li::before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 10px 20px 0 0;
+    height: 10px;
+    width: 10px;
+    background-image: url("http://i.imgur.com/F05JSPD.png");
+    background-repeat: no-repeat;
 }
 

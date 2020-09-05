@@ -9,11 +9,24 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Load CSS: Style Element-->
+        <style>
+            .blue{
+                color: blue;
+            }
+        </style>
+        
+        <!--Load CSS: External CSS file -->
+        <link rel="stylesheet" href="newcss.css"/>
     </head>
     <body>
         <header>CSS Application</header>
         
         <h1 class="big-header">This is a BIG Header</h1>
+        
+        <!--Load CSS: Inline CSS Style -->
+        <h1 style="color:blue;">This is a BIG Header</h1>
         
         <a href="index.html">Home</a>
         
@@ -33,6 +46,30 @@ and open the template in the editor.
         <div>The font-size of the div element is set to 30px. 
             <span>The span element inside the div element has a font-size of 0.5em, which equals to 0.5x30 = 15px</span>
         </div>    
-            
+       
+        <ul class="train">
+          <li>Web Development
+            <ul class="traininner">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>PHP</li>
+              <li>SQL</li>
+              <li>WordPress CMS</li>
+              <li>Magento CMS</li>
+            </ul>
+          </li>
+          <li>Backend Development
+            <ul class="traininner">
+              <li>C</li>
+              <li>C++</li>
+              <li>C#</li>
+              <li>Java</li>
+            </ul>
+          </li>
+         </ul>
+        
+        
     </body>
 </html>
