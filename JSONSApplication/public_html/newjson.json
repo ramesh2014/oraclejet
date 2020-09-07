@@ -1,0 +1,41 @@
+[
+    {
+    "name": "Ramesh",
+    "version": 1.0,
+    "isProgrammer": true,
+    "worksOn": ["ebs","fusionapps"],
+    "friends": [   {"name": "Ramesh",
+                    "version": 1.0,
+                    "isProgrammer": true,
+                    "worksOn": ["ebs","fusionapps"],
+                    "friends":[]
+                    },
+                    { "name": "Ramesh",
+                    "version": 1.0,
+                    "isProgrammer": true,
+                    "worksOn": ["ebs","fusionapps"],
+                    "friends":[]
+                    }
+                ]        
+    },
+    {
+    "name": "Ramesh",
+    "version": 1.0,
+    "isProgrammer": true,
+    "worksOn": ["ebs","fusionapps"],
+    "friends": [   {"name": "Ramesh",
+                    "version": 1.0,
+                    "isProgrammer": true,
+                    "worksOn": ["ebs","fusionapps"],
+                    "friends":[]
+                    },
+                    { "name": "Ramesh",
+                    "version": 1.0,
+                    "isProgrammer": true,
+                    "worksOn": ["ebs","fusionapps"],
+                    "friends":[]
+                    }
+                ]        
+    }
+]
+

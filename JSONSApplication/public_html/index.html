@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            let user = `[
+    {
+    "name": "ramnagar",
+    "version": 1.0,
+    "isProgrammer": true,
+    "worksOn": ["ebs","fusionapps"],
+    "friends": [   {"name": "ramnagar",
+                    "version": 1.0,
+                    "isProgrammer": true,
+                    "worksOn": ["ebs","fusionapps"],
+                    "friends":[]
+                    },
+                    { "name": "ramnagar",
+                    "version": 1.0,
+                    "isProgrammer": true,
+                    "worksOn": ["ebs","fusionapps"],
+                    "friends":[]
+                    }
+                ]        
+    },
+    {
+    "name": "ramnagar",
+    "version": 1.0,
+    "isProgrammer": true,
+    "worksOn": ["ebs","fusionapps"],
+    "friends": [   {"name": "ramnagar",
+                    "version": 1.0,
+                    "isProgrammer": true,
+                    "worksOn": ["ebs","fusionapps"],
+                    "friends":[]
+                    },
+                    { "name": "ramnagar",
+                    "version": 1.0,
+                    "isProgrammer": true,
+                    "worksOn": ["ebs","fusionapps"],
+                    "friends":[]
+                    }
+                ]        
+    }
+]`; //for string use back quote, remove for JSON object
+            console.log(user);
+            console.log(JSON.parse(user)[0].name);
+            
+            //var data = JSON.parse("newjson.json");
+            //console.log(data);
+            
+            //The loading of a .json file from harddisk is an asynchronous operation 
+            //and thus it needs to specify a callback function to execute after the file 
+            //is loaded.
+            
+            function readTextFile(file, callback) {
+                var rawFile = new XMLHttpRequest();
+                rawFile.overrideMimeType("application/json");
+                rawFile.open("GET", file, true);
+                rawFile.onreadystatechange = function() {
+                    if (rawFile.readyState === 4 && rawFile.status == "200") {
+                        callback(rawFile.responseText);
+                    }
+                }
+                rawFile.send(null);
+            }
+
+            //usage:
+            readTextFile("newjson.json", function(text){
+                var data = JSON.parse(text);
+                console.log(data);
+            });
+
+        </script>
+    
+    </head>
+    <body>
+        <div>
+            <a href="https://www.youtube.com/watch?v=iiADhChRriM">
+                Javascript Object Notation 
+            </a>
+            
+            <ul>JSON
+                <li>Data Representation Format</li>
+                <li>Commonly used for APIs and Config</li>
+                <li>Lightweight and Easy to Read or Write</li>
+                <li>Easily integrates with most languages</li>
+            </ul>   
+            
+            <ul> JSON Types
+                <li>Strings - "hello world"</li>
+                <li>Numbers - 10 1.5 -30 1.2e10</li>
+                <li>Booleans - true false</li>
+                <li>null - null</li>
+                <li>Arrays - [1,2,3] ["hello","world"]</li>
+                <li>Objects {"key":"value"}</li>  
+            </ul>
+            
+        </div>
+        
+    </body>
+</html>
