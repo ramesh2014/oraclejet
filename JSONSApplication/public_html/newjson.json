@@ -16,7 +16,13 @@
                     "worksOn": ["ebs","fusionapps"],
                     "friends":[]
                     }
-                ]        
+                ],
+     "enemies": {"name": "Ramesh",
+                    "version": 1.0,
+                    "isProgrammer": true,
+                    "worksOn": ["ebs","fusionapps"],
+                    "friends":[]
+                    }           
     },
     {
     "name": "Ramesh",
@@ -35,7 +41,12 @@
                     "worksOn": ["ebs","fusionapps"],
                     "friends":[]
                     }
-                ]        
+                ],
+      "enemies": {"name": "Ramesh",
+                    "version": 1.0,
+                    "isProgrammer": true,
+                    "worksOn": ["ebs","fusionapps"],
+                    "friends":[]
+                    }           
     }
 ]
-
